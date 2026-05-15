@@ -13,13 +13,3 @@ rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold", "-Zshare-generics=y"]
 linker = "rust-lld.exe"
 
 # macos linker is cracked as hell for some reason and is faster than lld and just as fast as mold
-
-# faster nightly codegen backend, doesn't work for wasm and sometimes macos
-[unstable]
-codegen-backend = true
-
-[profile.dev]
-codegen-backend = "cranelift"
-
-[profile.dev.package."*"]
-codegen-backend = "llvm"
