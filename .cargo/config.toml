@@ -1,7 +1,7 @@
 # for using mold as the linker on linux:
 [target.x86_64-unknown-linux-gnu]
 linker = "clang"
-rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold", "-Zshare-generics=y"]
+rustflags = ["-C", "link-arg=-fuse-ld=mold", "-Zshare-generics=y"]
 
 # for using lld as the linker on linux:
 # [target.x86_64-unknown-linux-gnu]
