@@ -2,9 +2,13 @@
 name = "dioxus-test"
 version = "0.1.0"
 edition = "2024"
+description = "a template for dioxus projects"
+readme = "README.md"
+repository = ""
+license = "MIT"
 
 [dependencies]
-dioxus = { version = "0.7.5", features = [] }
+dioxus = { version = "0.7.9", features = [] }
 
 [lints.clippy]
 needless_return = "allow"
